@@ -4,37 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div style="margin: 0 auto; width:1000px; height:800px; border:2px ; border-top:4px solid pink; border-right:4px solid pink;  border-left:4px solid pink;  border-bottom:4px solid pink; background-color: #FBF2EF; " >
-    <div style="margin: 0 auto; width:1000px; height:120px; border:2px ;   border-bottom:4px solid pink; background-color: #fff0f5;" >
-      <h1><a href="page1.html" style = " text-shadow: rgb(255,204,204) 10px 10px 20px;">👩  신상정보  👩</a></h1>
-      <div id="grid">
-        <ol>
-          <br><br><br>
-          <li><b><a href="page2.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px " >신상정보</a></b></li>
-          <br><br>
-          <li><b><a href="page3.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px"> 좋아하는 것</a></b></li>
-          <br><br>
-          <li><b><a href="page4.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px"> 코딩경험 </a></b></li>
-            <br><br>  <br><br>  <br><br>
-        </ol>
-      <div id="article">
-        <ul><br>
-          <li>이름: 권정인</li>
-          <br>
-          <li>학과: 문헌정보학과</li>
-          <br>
-          <li>학번: 18학번 (현 3학년 1학기)</li>
-          <br>
-          <li>나이: 23살 (98년생)</li>
-          <br>
-        </ul>
-        </div>
+  <div class="container">
+    <div style="margin: 0 auto; width:1140px; height:800px; border:2px ; border-top:4px solid pink; border-right:4px solid pink;  border-left:4px solid pink;  border-bottom:4px solid pink; background-color: #FBF2EF; " >
+      <div style="margin: 0 auto; width:1120px; height:120px; border:2px ;   border-bottom:4px solid pink; background-color: #fff0f5;" >
+        <h1><a href="page1.html" style = " text-shadow: rgb(255,204,204) 10px 10px 20px;">👩  신상정보  👩</a></h1>
+        <div id="grid">
+          <ul class="nav nav-pills nav-stacked">
+            <br>
+            <li role="presentation" class="active"><a href="page2.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">신상정보</a></li>
+            <li role="presentation"><a href="page3.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">좋아하는 것</a></li>
+            <li role="presentation"><a href="page4.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">코딩경험</a></li>
+            <li role="presentation"><a href="bingo.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">빙고</a></li>
+          </ul>
+        <div id="article">
+          <ul><br>
+            <li>이름: 권정인</li>
+            <br>
+            <li>학과: 문헌정보학과</li>
+            <br>
+            <li>학번: 18학번 (현 3학년 1학기)</li>
+            <br>
+            <li>나이: 23살 (98년생)</li>
+            <br>
+          </ul>
+          </div>
+      </div>
+       </div>
     </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+        <span class="sr-only">25% Complete</span>
+      </div>
+    </div>
+    <div class="panel-footer" align="center">made by 권정인 <br>멋쟁이 사자처럼 8기</div>
   </div>
-</div>
 </body>
 </html>

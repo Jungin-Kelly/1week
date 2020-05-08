@@ -17,7 +17,7 @@ h2 {
 }
 
 ul{
-  font-size:40px;
+  font-size:30px;
   color: #FF7493;
 }
 
@@ -27,6 +27,34 @@ ol{
   width:150px;
   margin:0;
   padding:20px;
+}
+
+table {
+  table-layout: fixed;
+  border: 10px solid pink;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow:rgb(255,204,204) 10px 10px 20px;
+  color: #FF7493;
+  position: fixed;
+  top: 200px;
+  left: 800px;
+}
+
+td {
+  font-weight: bold;
+  font-size: 16px;
+  border: 10px solid pink;
+  width: 130px;
+  height: 130px;
+  padding: 3px;
+  word-break: keep-all;
+  color: #FF7493
+}
+
+.panel-footer{
+  background: pink;
+  color: white;
 }
 #grid{
   display: grid;
@@ -39,7 +67,7 @@ ol{
   margin-top: 10px;
   padding-left:100px;
 }
-@media(max-width:800px){
+@media(max-width:800px)
   #grid{
     display: block;
   }
