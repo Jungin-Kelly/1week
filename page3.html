@@ -18,16 +18,29 @@
 </head>
 <body>
   <div class="container">
-    <div style="margin: 0 auto; width:1140px; height:800px; border:2px ; border-top:4px solid pink; border-right:4px solid pink;  border-left:4px solid pink;  border-bottom:4px solid pink; background-color: #FBF2EF; " >
-      <div style="margin: 0 auto; width:1120px; height:120px; border:2px ;   border-bottom:4px solid pink; background-color: #fff0f5;" >
+    <div id="square" style="margin: 0 auto; width:1140px; height:800px; border:2px ; border-top:4px solid pink; border-right:4px solid pink;  border-left:4px solid pink;  border-bottom:4px solid pink; background-color: #FBF2EF; " >
+      <div id="square2"style="margin: 0 auto; width:1120px; height:120px; border:2px ;   border-bottom:4px solid pink; background-color: #fff0f5;" >
         <h1><a href="page1.html" style = " text-shadow: rgb(255,204,204) 10px 10px 20px;">❤  좋아하는 것  ❤</a></h1>
+        <br>
+      <div class = "buttons">
+        <button class ="changebg" onclick="
+        document.querySelector('#square').style.backgroundColor='black'
+        document.querySelector('#square2').style.backgroundColor='black'
+        document.querySelector('ul').style.color='white'
+         ">nigth모드</button>
+        <button class ="changebg" onclick="
+        document.querySelector('#square').style.backgroundColor='#FBF2EF'
+        document.querySelector('#square2').style.backgroundColor='#fff0f5'
+         ">day모드</button>
+      </div>
         <div id="grid">
           <ul class="nav nav-pills nav-stacked">
             <br>
             <li role="presentation"><a href="page2.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">신상정보</a></li>
-            <li role="presentation" class="active"><a href="page3.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">좋아하는 것</a></li>
-            <li role="presentation"><a href="page4.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">코딩경험</a></li>
-            <li role="presentation"><a href="bingo.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">빙고</a></li>
+          <li role="presentation" class="active"><a href="page3.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">좋아하는 것</a></li>
+          <li role="presentation"><a href="page4.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">코딩경험</a></li>
+          <li role="presentation"><a href="bingo.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">빙고</a></li>
+          <li role="presentation"><a href="secretepage.html" style = "text-shadow: rgb(255,204,204) 10px 10px 20px ">비밀페이지</a></li>
           </ul>
         <div id="article">
           <ul><br>
@@ -45,8 +58,8 @@
     </div>
   </div>
   <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-      <span class="sr-only">50% Complete</span>
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+      <span class="sr-only">40% Complete</span>
     </div>
   </div>
   <div class="panel-footer" align="center">made by 권정인 <br>멋쟁이 사자처럼 8기</div>

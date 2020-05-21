@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .piccachubox {
+        position: absolute;
+        width: 1000px;
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -500px;
+        background-image: url('lawn.png');
+        background-position: center 105%;
+        background-repeat: no-repeat;
+    }
+
+    .pic {
+        position: relative;
+        margin-top: 100px;
+        margin-left: 350px;
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+        left:0px;
+        top:0px;
+    }
+
+    .controller {
+        position:relative;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .btn {
+        font-size: large;
+        color: white;
+        background-color: gray;
+        padding: 10px 10px;
+    }
+
+    .btn:hover {
+        background-color: black;
+    }
+
+    .day {
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="piccachubox">
+        <div class="day">
+            <button class="btn"
+            onclick="
+            document.querySelector('body').style.backgroundColor='yellow';
+            ">낮</button>
+            <button class="btn"
+            onclick="
+            document.querySelector('body').style.backgroundColor='black';
+            "
+            >밤</button>
+            이 되었다.
+        </div>
+        <img class="pic" id="piccachu" 
+        onmouseover="
+        document.querySelector('#piccachu').style.left=Math.random()*500+'px';
+        document.querySelector('#piccachu').style.top=Math.random()*300+'px';
+        "
+        onclick="
+        document.querySelector('img').src='monsterball.png';
+        document.querySelector('#piccachu').id='monsterball';
+        "
+        src="piccachu.png">
+    </div>
+</body>
+
+</html>

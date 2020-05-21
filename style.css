@@ -37,8 +37,8 @@ table {
   box-shadow:rgb(255,204,204) 10px 10px 20px;
   color: #FF7493;
   position: fixed;
-  top: 200px;
-  left: 800px;
+  top: 15%;
+  left: 40%;
 }
 
 td {
