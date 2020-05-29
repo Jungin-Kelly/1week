@@ -45,6 +45,7 @@
         </ul>
         
         <div id="article">
+          <div class="js-weather">날씨창</div>
           <ul><br>
             <li>안녕하세요~!</li>
             <br>
@@ -61,6 +62,26 @@
       </div>
     </div>
   </div>
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://junginsite.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   <div class="progress">
     <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
       <span class="sr-only">0% Complete</span>
@@ -68,5 +89,6 @@
   </div>
   <div class="panel-footer" align="center">made by 권정인 <br>멋쟁이 사자처럼 8기</div>
 </div>
+<script src="weather.js"></script>
 </body>
 </html>
